@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="solution.technopoda.project.com.banyumascitytour" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".splash2"
+            android:label="@string/title_activity_splash2" >
+        </activity>
+        <activity
+            android:name=".Tab"
+            android:label="@string/title_activity_tab" >
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".Gallery"
+            android:label="@string/title_activity_gallery" >
+        </activity>
+        <activity
+            android:name=".Info"
+            android:label="@string/title_activity_info" >
+        </activity>
+        <activity
+            android:name=".What"
+            android:label="@string/title_activity_what" >
+        </activity>
+        <activity
+            android:name=".Who"
+            android:label="@string/title_activity_who" >
+        </activity>
+        <activity
+            android:name=".Why"
+            android:label="@string/title_activity_why" >
+        </activity>
+        <activity
+            android:name=".Start"
+            android:label="@string/title_activity_start" >
+        </activity>
+    </application>
+
+</manifest>
