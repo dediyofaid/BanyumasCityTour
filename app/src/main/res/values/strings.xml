@@ -13,5 +13,12 @@
     <string name="title_activity_who">Who</string>
     <string name="title_activity_why">Why</string>
     <string name="title_activity_start">Start</string>
+    <string name="title_activity_menunavutama">Menunavutama</string>
+    <string name="title_section1">Pendidikan</string>
+    <string name="title_section2">Kesehatan</string>
+    <string name="title_section3">Kuliner</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
 
 </resources>

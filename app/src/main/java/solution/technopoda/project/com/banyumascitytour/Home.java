@@ -1,9 +1,12 @@
 package solution.technopoda.project.com.banyumascitytour;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 
 public class Home extends ActionBarActivity {
@@ -11,7 +14,16 @@ public class Home extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_home);
+        ImageButton btnstart = (ImageButton)findViewById(R.id.btnStart);
+        btnstart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent start = new Intent(Home.this, Menunavutama.class);
+                startActivity(start);
+            }
+        });
     }
 
 
