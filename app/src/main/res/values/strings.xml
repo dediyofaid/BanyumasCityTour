@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">BanyumasCityTour</string>
+    <string name="app_name">Banyumas City Tour</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_splash2">splash2</string>
@@ -13,7 +13,7 @@
     <string name="title_activity_who">Who</string>
     <string name="title_activity_why">Why</string>
     <string name="title_activity_start">Start</string>
-    <string name="title_activity_menunavutama">Menunavutama</string>
+    <string name="title_activity_menunavutama">Banyumas City Tour</string>
     <string name="title_section1">Pendidikan</string>
     <string name="title_section2">Kesehatan</string>
     <string name="title_section3">Kuliner</string>
