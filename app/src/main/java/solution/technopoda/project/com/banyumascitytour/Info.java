@@ -24,8 +24,8 @@ public class Info extends TabActivity {
         spec = tabhost.newTabSpec("What").setIndicator("What", null).setContent(intent);
         tabhost.addTab(spec);
 
-        intent = new Intent().setClass(this, Who.class);
-        spec = tabhost.newTabSpec("Who").setIndicator("Why", null).setContent(intent);
+        intent = new Intent().setClass(this, How.class);
+        spec = tabhost.newTabSpec("How").setIndicator("How", null).setContent(intent);
         tabhost.addTab(spec);
 
         intent = new Intent().setClass(this, Why.class);

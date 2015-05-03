@@ -10,52 +10,47 @@
         <activity
             android:name=".Splash"
             android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".splash2"
             android:label="@string/title_activity_splash2"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
         </activity>
         <activity
             android:name=".Tab"
             android:label="@string/title_activity_tab"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
         </activity>
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
         </activity>
         <activity
             android:name=".Gallery"
             android:label="@string/title_activity_gallery"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
         </activity>
         <activity
             android:name=".Info"
             android:label="@string/title_activity_info"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
         </activity>
         <activity
             android:name=".What"
             android:label="@string/title_activity_what"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-        </activity>
-        <activity
-            android:name=".Who"
-            android:label="@string/title_activity_who"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
         </activity>
         <activity
             android:name=".Why"
             android:label="@string/title_activity_why"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
         </activity>
         <activity
             android:name=".Start"
@@ -64,6 +59,10 @@
         <activity
             android:name=".Menunavutama"
             android:label="@string/title_activity_menunavutama" >
+        </activity>
+        <activity
+            android:name=".How"
+            android:label="@string/title_activity_how" >
         </activity>
     </application>
 
