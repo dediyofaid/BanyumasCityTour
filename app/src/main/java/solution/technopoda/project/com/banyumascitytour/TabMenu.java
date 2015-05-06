@@ -19,8 +19,8 @@ public class TabMenu extends TabActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab_menu);
-
         TabHost tabHost = getTabHost();
+        
         this.setNewTab(this, tabHost, "tab1", R.string.home, android.R.drawable.star_on, R.id.tab1);
         this.setNewTab(this, tabHost, "tab2", R.string.gallery, android.R.drawable.star_on, R.id.tab2);
         this.setNewTab(this, tabHost, "tab3", R.string.info, android.R.drawable.star_on, R.id.tab3);
@@ -30,8 +30,7 @@ public class TabMenu extends TabActivity {
 
     private void setNewTab(Context context, TabHost tabHost, String tag, int title, int icon, int contentID ){
         TabHost.TabSpec tabSpec = tabHost.newTabSpec(tag);
-        String titleString = getString(title);
-        tabSpec.setIndicator(titleString, context.getResources().getDrawable(android.R.drawable.star_on));
+        tabSpec.setIndicator(getTabIndicator(tabHost.getContext(), title, icon)); // new function to inject our own tab layout
         tabSpec.setContent(contentID);
         tabHost.addTab(tabSpec);
     }
@@ -44,28 +43,5 @@ public class TabMenu extends TabActivity {
         TextView tv = (TextView) view.findViewById(R.id.textView);
         tv.setText(title);
         return view;
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_tab_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }
