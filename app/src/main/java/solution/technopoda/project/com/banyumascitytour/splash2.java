@@ -24,7 +24,7 @@ public class splash2 extends ActionBarActivity {
             @Override
             public void run() {
                 Intent i = new Intent(splash2.this,
-                        Tab.class);
+                        TabMenu.class);
                 startActivity(i);
                 finish();
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);

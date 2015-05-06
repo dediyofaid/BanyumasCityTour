@@ -64,6 +64,10 @@
             android:name=".How"
             android:label="@string/title_activity_how" >
         </activity>
+        <activity
+            android:name=".TabMenu"
+            android:label="@string/title_activity_tab_menu" >
+        </activity>
     </application>
 
 </manifest>

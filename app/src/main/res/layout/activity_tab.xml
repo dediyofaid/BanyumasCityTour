@@ -23,7 +23,8 @@
             android:layout_height="-25dp"
             android:layout_gravity="bottom"
             android:background="#F57921"
-            android:layout_weight="0.70" />
+            android:layout_weight="0.70"
+            />
 
     </LinearLayout>
 </TabHost>
