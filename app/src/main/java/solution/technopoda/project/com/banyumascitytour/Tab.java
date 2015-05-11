@@ -2,6 +2,7 @@ package solution.technopoda.project.com.banyumascitytour;
 
 import android.app.TabActivity;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,6 +20,7 @@ public class Tab extends TabActivity {
         TabHost tabhost = getTabHost();
         TabHost.TabSpec spec;
         Intent intent;
+        Resources res = getResources();
 
         intent = new Intent().setClass(this, Home.class);
         spec = tabhost.newTabSpec("Home").setIndicator("Home", null).setContent(intent);

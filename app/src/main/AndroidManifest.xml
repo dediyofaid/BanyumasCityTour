@@ -7,6 +7,9 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <activity android:name=".Tab_Home" />
+        <activity android:name=".Tab_Gallery" />
+        <activity android:name=".Tab_Info" />
         <activity
             android:name=".Splash"
             android:label="@string/app_name"
@@ -65,8 +68,8 @@
             android:label="@string/title_activity_how" >
         </activity>
         <activity
-            android:name=".TabMenu"
-            android:label="@string/title_activity_tab_menu" >
+            android:name=".Wisata"
+            android:label="@string/title_activity_wisata" >
         </activity>
     </application>
 

@@ -17,16 +17,15 @@
     <string name="title_section1">Pendidikan</string>
     <string name="title_section2">Kesehatan</string>
     <string name="title_section3">Kuliner</string>
+    <string name="title_section4">Wisata</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
     <string name="title_activity_how">How</string>
     <string name="title_activity_tab_menu">TabMenu</string>
-
-
     <string name="home">Home</string>
     <string name="gallery">Gallery</string>
     <string name="info">Info</string>
-
+    <string name="title_activity_wisata">Wisata</string>
 
 </resources>
