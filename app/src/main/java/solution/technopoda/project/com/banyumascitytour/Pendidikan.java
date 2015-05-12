@@ -1,6 +1,7 @@
 package solution.technopoda.project.com.banyumascitytour;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,6 +15,7 @@ import android.app.ExpandableListActivity;
 import android.view.Gravity;
 import android.widget.AbsListView;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
@@ -36,6 +38,14 @@ public class Pendidikan extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
         rootview = inflater.inflate(R.layout.pendidikan,container,false);
+        Button pendidikan = (Button)rootview.findViewById(R.id.btnPendidikan);
+        pendidikan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), ExpandPendidikan.class);
+                startActivity(i);
+            }
+        });
         return rootview;
     }
 }

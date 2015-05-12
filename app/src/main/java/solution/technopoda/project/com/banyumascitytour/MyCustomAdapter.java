@@ -16,36 +16,36 @@ import java.util.List;
  */
 public class MyCustomAdapter extends BaseExpandableListAdapter {
     private Context context;
-    private HashMap<String, List<String>> countriesHashMap;
-    private List<String> countryList;
+    private HashMap<String, List<String>> technopodaHashMap;
+    private List<String> ExpandList;
 
     public MyCustomAdapter(Context context,
                            HashMap<String, List<String>> hashMap,
                            List<String> list) {
-        countriesHashMap = hashMap;
+        technopodaHashMap = hashMap;
         this.context = context;
-        this.countriesHashMap = hashMap;
-        this.countryList = list;
+        this.technopodaHashMap = hashMap;
+        this.ExpandList = list;
     }
 
     @Override
     public int getGroupCount() {
-        return countriesHashMap.size();
+        return technopodaHashMap.size();
     }
 
     @Override
     public int getChildrenCount(int groupPosition) {
-        return countriesHashMap.get(countryList.get(groupPosition)).size();
+        return technopodaHashMap.get(ExpandList.get(groupPosition)).size();
     }
 
     @Override
     public Object getGroup(int groupPosition) {
-        return countryList.get(groupPosition);
+        return ExpandList.get(groupPosition);
     }
 
     @Override
     public Object getChild(int groupPosition, int childPosition) {
-        return countriesHashMap.get(countryList.get(groupPosition)).get(childPosition);
+        return technopodaHashMap.get(ExpandList.get(groupPosition)).get(childPosition);
     }
 
     @Override

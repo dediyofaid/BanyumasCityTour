@@ -7,4 +7,10 @@ public class MyDataArrays {
     static String[] perguruantinggiArray = {"Universitas Jendral Soedirman", "Universitas Muhammadiyah Purwokerto", "Universitas Wijaya Kusuma", "STIMIK AMIKOM"};
     static String[] smaArray = {"SMA 1 Purwokerto", "SMA 2 Purwokerto", "SMK Bina Teknologi", "SMK Bunda Satria"};
     static String[] smpArray = {"SMP Negeri 1 Purwokerto", "SMP Negeri 1 Wangon", "SMP Muhammadiyah 1", "MTS Ma'arif NU 1"};
+
+    static String[] banyumasArray = {"Universitas Jendral Soedirman", "Universitas Muhammadiyah Purwokerto", "Universitas Wijaya Kusuma", "STIMIK AMIKOM"};
+    static String[] margonoArray = {"SMA 1 Purwokerto", "SMA 2 Purwokerto", "SMK Bina Teknologi", "SMK Bunda Satria"};
+    static String[] hidayahArray = {"SMP Negeri 1 Purwokerto", "SMP Negeri 1 Wangon", "SMP Muhammadiyah 1", "MTS Ma'arif NU 1"};
+
+
 }
