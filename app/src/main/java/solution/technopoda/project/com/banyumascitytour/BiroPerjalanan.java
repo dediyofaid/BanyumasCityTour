@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class BiroPerjalanan extends Fragment {
@@ -17,7 +18,7 @@ public class BiroPerjalanan extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
         rootview = inflater.inflate(R.layout.activity_biro_perjalanan, container, false);
-        Button perjalanan = (Button)rootview.findViewById(R.id.btnPerjalanan);
+        ImageButton perjalanan = (ImageButton)rootview.findViewById(R.id.btnPerjalanan);
         perjalanan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

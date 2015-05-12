@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class Wisata extends Fragment {
@@ -20,7 +21,7 @@ public class Wisata extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
         rootview = inflater.inflate(R.layout.activity_wisata, container, false);
-        Button wisata = (Button)rootview.findViewById(R.id.btnWisata);
+        ImageButton wisata = (ImageButton)rootview.findViewById(R.id.btnWisata);
         wisata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

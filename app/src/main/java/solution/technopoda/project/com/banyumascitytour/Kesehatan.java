@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 /**
  * Created by HabibDea on 29/04/2015.
@@ -18,7 +19,7 @@ public class Kesehatan extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
         rootview = inflater.inflate(R.layout.kesehatan,container,false);
-        Button kesehatan = (Button)rootview.findViewById(R.id.btnKesehatan);
+        ImageButton kesehatan = (ImageButton)rootview.findViewById(R.id.btnKesehatan);
         kesehatan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

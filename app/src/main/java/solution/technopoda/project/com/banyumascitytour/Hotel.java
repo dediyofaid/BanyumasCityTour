@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class Hotel extends Fragment {
@@ -17,7 +18,7 @@ public class Hotel extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
         rootview = inflater.inflate(R.layout.activity_hotel, container, false);
-        Button hotel = (Button)rootview.findViewById(R.id.btnHotel);
+        ImageButton hotel = (ImageButton)rootview.findViewById(R.id.btnHotel);
         hotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
