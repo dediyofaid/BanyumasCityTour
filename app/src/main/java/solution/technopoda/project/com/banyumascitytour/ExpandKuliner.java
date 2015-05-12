@@ -1,39 +1,61 @@
 package solution.technopoda.project.com.banyumascitytour;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ExpandableListView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 
-public class ExpandKuliner extends ActionBarActivity {
+public class ExpandKuliner extends Activity {
+    HashMap<String, List<String>> kulinerHashMap;
+    List<String> kulinerHashMapKeys;
+    ExpandableListView expandableListView;
+    MyCustomAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.expand_kuliner);
-    }
 
+        expandableListView = (ExpandableListView) findViewById(R.id.expandableList);
+        kulinerHashMap = MyDataProvider.kulinerDataHashMap();
+        kulinerHashMapKeys = new ArrayList<String>(kulinerHashMap.keySet());
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_expand_kuliner, menu);
-        return true;
-    }
+        adapter = new MyCustomAdapter(this, kulinerHashMap, kulinerHashMapKeys);
+        expandableListView.setAdapter(adapter);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+            @Override
+            public void onGroupExpand(int groupPosition) {
+                Toast.makeText(ExpandKuliner.this,
+                        kulinerHashMapKeys.get(groupPosition)
+                                + " expanded", Toast.LENGTH_SHORT).show();
+            }
+        });
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        expandableListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
+            @Override
+            public void onGroupCollapse(int groupPosition) {
+                Toast.makeText(ExpandKuliner.this, kulinerHashMapKeys.get(groupPosition) + " collapsed", Toast.LENGTH_SHORT).show();
+            }
+        });
 
-        return super.onOptionsItemSelected(item);
+        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView expandableListView, View clickedView, int groupPosition, int childPosition, long id) {
+                Toast.makeText(ExpandKuliner.this, "Selected " + kulinerHashMap.get(kulinerHashMapKeys.get(groupPosition)).get(childPosition)
+                        + " from " + kulinerHashMapKeys.get(groupPosition), Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        });
+
     }
 }
