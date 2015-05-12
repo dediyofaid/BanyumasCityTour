@@ -1,6 +1,7 @@
 package solution.technopoda.project.com.banyumascitytour;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -51,9 +52,10 @@ public class Menunavutama extends ActionBarActivity
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         Fragment objf = null;
+        Intent i;
         switch (position) {
             case 0:
-                objf = new Pendidikan_Contoh.PlaceholderFragment();
+                objf = new Pendidikan();
                 break;
             case 1:
                 objf = new Kesehatan();
@@ -81,7 +83,7 @@ public class Menunavutama extends ActionBarActivity
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.title_activity_pendidikan__contoh);
+                mTitle = getString(R.string.title_section1);
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);

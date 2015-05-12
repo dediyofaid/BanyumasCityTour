@@ -32,5 +32,11 @@
     <string name="title_activity_hotel">Hotel</string>
     <string name="title_activity_biro_perjalanan">BiroPerjalanan</string>
     <string name="title_activity_pendidikan__contoh">Pendidikan_Contoh</string>
+    <string name="title_activity_expand_pendidikan">ExpandPendidikan</string>
+    <string name="title_activity_expand_kesehatan">ExpandKesehatan</string>
+    <string name="title_activity_expand_kuliner">ExpandKuliner</string>
+    <string name="title_activity_expand_wisata">ExpandWisata</string>
+    <string name="title_activity_expand_hotel">ExpandHotel</string>
+    <string name="title_activity_expand_biro_perjalanan">ExpandBiroPerjalanan</string>
 
 </resources>

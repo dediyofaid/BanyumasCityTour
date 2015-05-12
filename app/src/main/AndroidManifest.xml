@@ -83,6 +83,30 @@
             android:name=".Pendidikan_Contoh"
             android:label="@string/title_activity_pendidikan__contoh" >
         </activity>
+        <activity
+            android:name=".ExpandPendidikan"
+            android:label="@string/title_activity_expand_pendidikan" >
+        </activity>
+        <activity
+            android:name=".ExpandKesehatan"
+            android:label="@string/title_activity_expand_kesehatan" >
+        </activity>
+        <activity
+            android:name=".ExpandKuliner"
+            android:label="@string/title_activity_expand_kuliner" >
+        </activity>
+        <activity
+            android:name=".ExpandWisata"
+            android:label="@string/title_activity_expand_wisata" >
+        </activity>
+        <activity
+            android:name=".ExpandHotel"
+            android:label="@string/title_activity_expand_hotel" >
+        </activity>
+        <activity
+            android:name=".ExpandBiroPerjalanan"
+            android:label="@string/title_activity_expand_biro_perjalanan" >
+        </activity>
     </application>
 
 </manifest>
