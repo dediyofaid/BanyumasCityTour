@@ -1,40 +1,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:background="#F57921">
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Transportasi"
-        android:id="@+id/textView22"
-        android:layout_marginTop="95dp"
-        android:textSize="50dp"
-        android:gravity="center_horizontal"
+        android:text="Biro Perjalanan"
+        android:id="@+id/lblperjalanan"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Adalah content tentang Transportasi"
-        android:id="@+id/textView23"
-        android:layout_marginTop="29dp"
-        android:layout_below="@+id/textView22"
-        android:layout_centerHorizontal="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btntrans"
-        android:layout_below="@+id/textView23"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="95dp"
-        android:src="@drawable/transportasi"
-        android:background="@drawable/transportasi" />
+        android:layout_marginTop="84dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perjalanan"
+        android:id="@+id/btnPerjalanan"
+        android:layout_marginTop="93dp"
+        android:layout_below="@+id/lblperjalanan"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

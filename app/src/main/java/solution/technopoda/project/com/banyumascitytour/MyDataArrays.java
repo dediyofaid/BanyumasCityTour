@@ -23,4 +23,8 @@ public class MyDataArrays {
     static String[] buntosArray = {"Universitas Jendral Soedirman", "Universitas Muhammadiyah Purwokerto", "Universitas Wijaya Kusuma", "STIMIK AMIKOM"};
     static String[] gethukArray = {"SMA 1 Purwokerto", "SMA 2 Purwokerto", "SMK Bina Teknologi", "SMK Bunda Satria"};
     static String[] paparonArray = {"SMP Negeri 1 Purwokerto", "SMP Negeri 1 Wangon", "SMP Muhammadiyah 1", "MTS Ma'arif NU 1"};
+
+    static String[] amanatArray = {"Universitas Jendral Soedirman", "Universitas Muhammadiyah Purwokerto", "Universitas Wijaya Kusuma", "STIMIK AMIKOM"};
+    static String[] arjunaArray = {"SMA 1 Purwokerto", "SMA 2 Purwokerto", "SMK Bina Teknologi", "SMK Bunda Satria"};
+    static String[] mitraArray = {"SMP Negeri 1 Purwokerto", "SMP Negeri 1 Wangon", "SMP Muhammadiyah 1", "MTS Ma'arif NU 1"};
 }
