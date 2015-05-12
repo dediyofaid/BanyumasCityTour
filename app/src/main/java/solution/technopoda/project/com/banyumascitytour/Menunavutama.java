@@ -53,7 +53,7 @@ public class Menunavutama extends ActionBarActivity
         Fragment objf = null;
         switch (position) {
             case 0:
-                objf = new Pendidikan();
+                objf = new Pendidikan_Contoh.PlaceholderFragment();
                 break;
             case 1:
                 objf = new Kesehatan();
@@ -63,6 +63,13 @@ public class Menunavutama extends ActionBarActivity
                 break;
             case 3:
                 objf = new Wisata();
+                break;
+            case 4:
+                objf = new Hotel();
+                break;
+            case 5:
+                objf = new BiroPerjalanan();
+                break;
         }
 
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -74,7 +81,7 @@ public class Menunavutama extends ActionBarActivity
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.title_section1);
+                mTitle = getString(R.string.title_activity_pendidikan__contoh);
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
@@ -84,6 +91,13 @@ public class Menunavutama extends ActionBarActivity
                 break;
             case 4:
                 mTitle = getString(R.string.title_section4);
+                break;
+            case 5:
+                mTitle=getString(R.string.title_section5);
+                break;
+            case 6:
+                mTitle=getString(R.string.title_section6);
+                break;
         }
     }
 

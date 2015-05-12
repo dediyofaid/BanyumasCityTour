@@ -71,6 +71,18 @@
             android:name=".Wisata"
             android:label="@string/title_activity_wisata" >
         </activity>
+        <activity
+            android:name=".Hotel"
+            android:label="@string/title_activity_hotel" >
+        </activity>
+        <activity
+            android:name=".BiroPerjalanan"
+            android:label="@string/title_activity_biro_perjalanan" >
+        </activity>
+        <activity
+            android:name=".Pendidikan_Contoh"
+            android:label="@string/title_activity_pendidikan__contoh" >
+        </activity>
     </application>
 
 </manifest>

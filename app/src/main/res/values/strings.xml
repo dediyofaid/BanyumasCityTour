@@ -18,6 +18,8 @@
     <string name="title_section2">Kesehatan</string>
     <string name="title_section3">Kuliner</string>
     <string name="title_section4">Wisata</string>
+    <string name="title_section5">Hotel</string>
+    <string name="title_section6">Biro Perjalanan</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
@@ -27,5 +29,8 @@
     <string name="gallery">Gallery</string>
     <string name="info">Info</string>
     <string name="title_activity_wisata">Wisata</string>
+    <string name="title_activity_hotel">Hotel</string>
+    <string name="title_activity_biro_perjalanan">BiroPerjalanan</string>
+    <string name="title_activity_pendidikan__contoh">Pendidikan_Contoh</string>
 
 </resources>
