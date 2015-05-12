@@ -79,6 +79,7 @@
             android:name=".BiroPerjalanan"
             android:label="@string/title_activity_biro_perjalanan" >
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".Pendidikan_Contoh"
             android:label="@string/title_activity_pendidikan__contoh" >
@@ -107,6 +108,9 @@
             android:name=".ExpandBiroPerjalanan"
             android:label="@string/title_activity_expand_biro_perjalanan" >
         </activity>
+=======
+
+>>>>>>> UPdate bejaddd, mantafff
     </application>
 
 </manifest>
