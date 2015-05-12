@@ -1,6 +1,7 @@
 package solution.technopoda.project.com.banyumascitytour;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBarActivity;
@@ -10,6 +11,7 @@ import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 public class Wisata extends Fragment {
@@ -18,6 +20,14 @@ public class Wisata extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
         rootview = inflater.inflate(R.layout.activity_wisata, container, false);
+        Button wisata = (Button)rootview.findViewById(R.id.btnWisata);
+        wisata.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), ExpandWisata.class);
+                startActivity(i);
+            }
+        });
         return rootview;
     }
 }

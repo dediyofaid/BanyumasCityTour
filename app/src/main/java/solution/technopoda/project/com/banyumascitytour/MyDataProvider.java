@@ -62,4 +62,83 @@ public class MyDataProvider {
         kesehatanHashMap.put("RSUD Hidayah", hidayahList);
         return kesehatanHashMap;
     }
+
+
+    public static HashMap<String, List<String>> hotelDataHashMap() {
+        HashMap<String, List<String>> hotelHashMap = new HashMap<String, List<String>>();
+        List<String> atriumresorthotelList = new ArrayList<String>();
+        List<String> greenvalleyList = new ArrayList<String>();
+        List<String> astonList = new ArrayList<String>();
+
+
+        for (int i = 0; i < MyDataArrays.atriumArray.length; i++) {
+            atriumresorthotelList.add(MyDataArrays.atriumArray[i]);
+        }
+
+        for (int i = 0; i < MyDataArrays.greenvalleyArray.length; i++) {
+            greenvalleyList.add(MyDataArrays.greenvalleyArray[i]);
+        }
+
+        for (int i = 0; i < MyDataArrays.astonArray.length; i++) {
+            astonList.add(MyDataArrays.astonArray[i]);
+        }
+
+        hotelHashMap.put("Atrium Resort Hotel", atriumresorthotelList);
+        hotelHashMap.put("Green Valley Hotel", greenvalleyList);
+        hotelHashMap.put("Aston Imperium", astonList);
+        return hotelHashMap;
+    }
+
+
+    public static HashMap<String, List<String>> wisataDataHashMap() {
+        HashMap<String, List<String>> wisataHashMap = new HashMap<String, List<String>>();
+        List<String> wisataAlamList = new ArrayList<String>();
+        List<String> wisataReligiList = new ArrayList<String>();
+        List<String> wisataSejarahList = new ArrayList<String>();
+
+
+        for (int i = 0; i < MyDataArrays.wisataAlamArray.length; i++) {
+            wisataAlamList.add(MyDataArrays.wisataAlamArray[i]);
+        }
+
+        for (int i = 0; i < MyDataArrays.wisataReligiArray.length; i++) {
+            wisataReligiList.add(MyDataArrays.wisataReligiArray[i]);
+        }
+
+        for (int i = 0; i < MyDataArrays.wisataSejarahArray.length; i++) {
+            wisataSejarahList.add(MyDataArrays.wisataSejarahArray[i]);
+        }
+
+        wisataHashMap.put("Wisata Alam", wisataAlamList);
+        wisataHashMap.put("Wisata Religi", wisataReligiList);
+        wisataHashMap.put("Wisata Sejarah", wisataSejarahList);
+        return wisataHashMap;
+    }
+
+    public static HashMap<String, List<String>> kulinerDataHashMap() {
+        HashMap<String, List<String>> kulinerHashMap = new HashMap<String, List<String>>();
+        List<String> buntosList = new ArrayList<String>();
+        List<String> gethukList = new ArrayList<String>();
+        List<String> paparonList = new ArrayList<String>();
+
+
+        for (int i = 0; i < MyDataArrays.buntosArray.length; i++) {
+            buntosList.add(MyDataArrays.buntosArray[i]);
+        }
+
+        for (int i = 0; i < MyDataArrays.gethukArray.length; i++) {
+            gethukList.add(MyDataArrays.gethukArray[i]);
+        }
+
+        for (int i = 0; i < MyDataArrays.paparonArray.length; i++) {
+            paparonList.add(MyDataArrays.paparonArray[i]);
+        }
+
+        kulinerHashMap.put("Bunto's Chicken & Rita Bakery", buntosList);
+        kulinerHashMap.put("Gethuk Goreng H. Tohirin Sokaraja", gethukList);
+        kulinerHashMap.put("Paparon's Pizza Purwokerto", paparonList);
+        return kulinerHashMap;
+    }
+
+
 }
