@@ -140,5 +140,30 @@ public class MyDataProvider {
         return kulinerHashMap;
     }
 
+    public static HashMap<String, List<String>> perjalananDataHashMap() {
+        HashMap<String, List<String>> perjalananHashMap = new HashMap<String, List<String>>();
+        List<String> amanatList = new ArrayList<String>();
+        List<String> arjunaList = new ArrayList<String>();
+        List<String> mitraList = new ArrayList<String>();
+
+
+        for (int i = 0; i < MyDataArrays.amanatArray.length; i++) {
+            amanatList.add(MyDataArrays.amanatArray[i]);
+        }
+
+        for (int i = 0; i < MyDataArrays.arjunaArray.length; i++) {
+            arjunaList.add(MyDataArrays.arjunaArray[i]);
+        }
+
+        for (int i = 0; i < MyDataArrays.mitraArray.length; i++) {
+            mitraList.add(MyDataArrays.mitraArray[i]);
+        }
+
+        perjalananHashMap.put("Amanat Tour", amanatList);
+        perjalananHashMap.put("Arjuna Tour and Travel", arjunaList);
+        perjalananHashMap.put("CV Mitra Internusapada Tour & Travel", mitraList);
+        return perjalananHashMap;
+    }
+
 
 }
