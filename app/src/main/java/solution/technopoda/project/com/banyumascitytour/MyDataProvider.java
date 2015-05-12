@@ -16,11 +16,6 @@ public class MyDataProvider {
         List<String> smpList = new ArrayList<String>();
 
 
-
-
-
-
-
         for (int i = 0; i < MyDataArrays.perguruantinggiArray.length; i++) {
             perguruantinggiList.add(MyDataArrays.perguruantinggiArray[i]);
         }
