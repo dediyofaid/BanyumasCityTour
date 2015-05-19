@@ -103,6 +103,10 @@
             android:name=".ExpandBiroPerjalanan"
             android:label="@string/title_activity_expand_biro_perjalanan" >
         </activity>
+        <activity
+            android:name=".MainFragment"
+            android:label="@string/title_activity_main_fragment" >
+        </activity>
     </application>
 
 </manifest>

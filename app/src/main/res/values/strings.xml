@@ -20,6 +20,7 @@
     <string name="title_section4">Wisata</string>
     <string name="title_section5">Hotel</string>
     <string name="title_section6">Biro Perjalanan</string>
+    <string name="title_section7"></string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
@@ -38,6 +39,7 @@
     <string name="title_activity_expand_wisata">ExpandWisata</string>
     <string name="title_activity_expand_hotel">ExpandHotel</string>
     <string name="title_activity_expand_biro_perjalanan">ExpandBiroPerjalanan</string>
-
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main_fragment">MainFragment</string>
 
 </resources>

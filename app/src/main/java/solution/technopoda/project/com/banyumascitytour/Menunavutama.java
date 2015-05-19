@@ -55,21 +55,24 @@ public class Menunavutama extends ActionBarActivity
         Intent i;
         switch (position) {
             case 0:
-                objf = new Pendidikan();
+                objf = new MainFragment();
                 break;
             case 1:
-                objf = new Kesehatan();
+                objf = new Pendidikan();
                 break;
             case 2:
-                objf = new Kuliner();
+                objf = new Kesehatan();
                 break;
             case 3:
-                objf = new Wisata();
+                objf = new Kuliner();
                 break;
             case 4:
-                objf = new Hotel();
+                objf = new Wisata();
                 break;
             case 5:
+                objf = new Hotel();
+                break;
+            case 6:
                 objf = new BiroPerjalanan();
                 break;
         }
@@ -83,21 +86,24 @@ public class Menunavutama extends ActionBarActivity
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.title_section1);
+                mTitle = getString(R.string.title_section7);
                 break;
             case 2:
-                mTitle = getString(R.string.title_section2);
+                mTitle = getString(R.string.title_section1);
                 break;
             case 3:
-                mTitle = getString(R.string.title_section3);
+                mTitle = getString(R.string.title_section2);
                 break;
             case 4:
-                mTitle = getString(R.string.title_section4);
+                mTitle = getString(R.string.title_section3);
                 break;
             case 5:
-                mTitle=getString(R.string.title_section5);
+                mTitle = getString(R.string.title_section4);
                 break;
             case 6:
+                mTitle=getString(R.string.title_section5);
+                break;
+            case 7:
                 mTitle=getString(R.string.title_section6);
                 break;
         }
