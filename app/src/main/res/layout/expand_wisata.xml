@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    >
+    android:background="#F57921">
 
     <ExpandableListView
         android:id="@+id/expandableList"

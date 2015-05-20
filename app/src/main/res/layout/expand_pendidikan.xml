@@ -4,14 +4,15 @@
     android:orientation="vertical"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    >
+    android:background="#F57921">
 
     <ExpandableListView
         android:id="@+id/expandableList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="#000000"
+        android:divider="#B3094D"
         android:dividerHeight="10dp"
+        android:childDivider="#F06969"
         android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
         ></ExpandableListView>
 </LinearLayout>

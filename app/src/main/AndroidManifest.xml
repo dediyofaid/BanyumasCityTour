@@ -107,6 +107,18 @@
             android:name=".MainFragment"
             android:label="@string/title_activity_main_fragment" >
         </activity>
+        <activity
+            android:theme="@android:style/Theme.Dialog"
+            android:name=".SMA.SMA1"
+            android:label="@string/title_activity_sma2" >
+        </activity>
+        <activity
+
+            android:theme="@android:style/Theme.Dialog"
+            android:name=".SMA.SMA2"
+            android:label="@string/title_activity_sma2" >
+        </activity>
+
     </application>
 
 </manifest>

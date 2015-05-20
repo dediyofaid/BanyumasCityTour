@@ -1,6 +1,7 @@
 package solution.technopoda.project.com.banyumascitytour;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,6 +13,9 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import solution.technopoda.project.com.banyumascitytour.SMA.SMA1;
+import solution.technopoda.project.com.banyumascitytour.SMA.SMA2;
 
 
 public class ExpandPendidikan extends Activity {
@@ -50,8 +54,21 @@ public class ExpandPendidikan extends Activity {
         expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView expandableListView, View clickedView, int groupPosition, int childPosition, long id) {
-                Toast.makeText(ExpandPendidikan.this, "Selected " + pendidikanHashMap.get(pendidikanHashMapKeys.get(groupPosition)).get(childPosition)
-                        + " from " + pendidikanHashMapKeys.get(groupPosition), Toast.LENGTH_SHORT).show();
+                if(groupPosition==0) {
+                    if(childPosition==0) {
+                        Intent intent0 = new Intent(getApplicationContext(), SMA1.class);
+                        startActivity(intent0);}
+                        else if(childPosition==1) {
+                            Intent intent1 = new Intent(getApplicationContext(), SMA2.class);
+                            startActivity(intent1);
+                        }
+                            else
+                        {
+                                Intent intent1 = new Intent(getApplicationContext(), BiroPerjalanan.class);
+                                startActivity(intent1);}
+                    }
+
+
                 return false;
             }
         });

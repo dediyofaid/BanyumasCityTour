@@ -77,7 +77,7 @@ public class MyCustomAdapter extends BaseExpandableListAdapter {
         return convertView;
     }
 
-    @Override
+   @Override
     public View getChildView(int groupPosition,
                              int childPosition,
                              boolean isLastChild, View convertView, ViewGroup parent) {

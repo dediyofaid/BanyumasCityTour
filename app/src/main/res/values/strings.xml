@@ -41,5 +41,7 @@
     <string name="title_activity_expand_biro_perjalanan">ExpandBiroPerjalanan</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_main_fragment">MainFragment</string>
+    <string name="title_activity_sma2">sma2</string>
+    <string name="title_activity_asdsdd">asdsdd</string>
 
 </resources>
