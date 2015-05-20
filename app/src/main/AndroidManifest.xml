@@ -81,7 +81,8 @@
         </activity>
         <activity
             android:name=".ExpandPendidikan"
-            android:label="@string/title_activity_expand_pendidikan" >
+            android:label="@string/title_activity_expand_pendidikan">
+            >
         </activity>
         <activity
             android:name=".ExpandKesehatan"
@@ -102,10 +103,6 @@
         <activity
             android:name=".ExpandBiroPerjalanan"
             android:label="@string/title_activity_expand_biro_perjalanan" >
-        </activity>
-        <activity
-            android:name=".MainFragment"
-            android:label="@string/title_activity_main_fragment" >
         </activity>
         <activity
             android:theme="@android:style/Theme.Dialog"

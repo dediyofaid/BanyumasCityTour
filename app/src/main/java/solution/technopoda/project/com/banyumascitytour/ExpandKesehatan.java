@@ -1,12 +1,14 @@
 package solution.technopoda.project.com.banyumascitytour;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -23,7 +25,17 @@ public class ExpandKesehatan extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.expand_kesehatan);
-
+        overridePendingTransition(R.anim.abc_fade_in,R.anim.abc_fade_out);
+        ImageButton kes = (ImageButton)findViewById(R.id.btnkes);
+        kes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent start = new Intent(ExpandKesehatan.this, Menunavutama.class);
+                startActivity(start);
+                finish();
+                overridePendingTransition(R.anim.abc_fade_in,R.anim.abc_fade_out);
+            }
+        });
         expandableListView = (ExpandableListView) findViewById(R.id.expandableList);
         kesehatanHashMap = MyDataProvider.kesehatanDataHashMap();
         kesehatanHashMapKeys = new ArrayList<String>(kesehatanHashMap.keySet());

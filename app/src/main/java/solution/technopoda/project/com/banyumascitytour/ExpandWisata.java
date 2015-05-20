@@ -1,12 +1,14 @@
 package solution.technopoda.project.com.banyumascitytour;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -24,7 +26,17 @@ public class ExpandWisata extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.expand_wisata);
-
+        overridePendingTransition(R.anim.abc_fade_in,R.anim.abc_fade_out);
+        ImageButton btnbackwis = (ImageButton)findViewById(R.id.btnbackw);
+        btnbackwis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent start = new Intent(ExpandWisata.this, Menunavutama.class);
+                startActivity(start);
+                finish();
+                overridePendingTransition(R.anim.abc_fade_in,R.anim.abc_fade_out);
+            }
+        });
         expandableListView = (ExpandableListView) findViewById(R.id.expandableList);
         wisataHashMap = MyDataProvider.wisataDataHashMap();
         wisataHashMapKeys = new ArrayList<String>(wisataHashMap.keySet());

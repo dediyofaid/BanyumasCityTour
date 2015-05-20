@@ -1,12 +1,14 @@
 package solution.technopoda.project.com.banyumascitytour;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -24,7 +26,17 @@ public class ExpandHotel extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.expand_hotel);
-
+        overridePendingTransition(R.anim.abc_fade_in,R.anim.abc_fade_out);
+        ImageButton hotel1 = (ImageButton)findViewById(R.id.btnbackhot);
+        hotel1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent start = new Intent(ExpandHotel.this, Menunavutama.class);
+                startActivity(start);
+                finish();
+                overridePendingTransition(R.anim.abc_fade_in,R.anim.abc_fade_out);
+            }
+        });
 
         expandableListView = (ExpandableListView) findViewById(R.id.expandableList);
         hotelHashMap = MyDataProvider.hotelDataHashMap();

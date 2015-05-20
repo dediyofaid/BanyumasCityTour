@@ -46,6 +46,8 @@ public class Menunavutama extends ActionBarActivity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+        overridePendingTransition(R.anim.abc_fade_in,R.anim.abc_fade_out);
     }
 
     @Override

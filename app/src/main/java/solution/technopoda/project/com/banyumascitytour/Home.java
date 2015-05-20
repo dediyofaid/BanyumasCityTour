@@ -22,6 +22,8 @@ public class Home extends ActionBarActivity {
             public void onClick(View v) {
                 Intent start = new Intent(Home.this, Menunavutama.class);
                 startActivity(start);
+                finish();
+                overridePendingTransition(R.anim.abc_fade_in,R.anim.abc_fade_out);
             }
         });
     }

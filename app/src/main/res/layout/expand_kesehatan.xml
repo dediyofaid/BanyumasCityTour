@@ -6,12 +6,24 @@
     android:paddingRight="16dp"
     android:background="#F57921">
 
-    <ExpandableListView
-        android:id="@+id/expandableList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="#000000"
-        android:dividerHeight="10dp"
-        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
-        ></ExpandableListView>
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:id="@+id/btnkes"
+        android:background="@drawable/home" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ExpandableListView
+            android:id="@+id/expandableList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#000000"
+            android:dividerHeight="10dp"
+            android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+            ></ExpandableListView>
+    </RelativeLayout>
+
 </LinearLayout>

@@ -1,5 +1,6 @@
 package solution.technopoda.project.com.banyumascitytour;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -8,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -27,7 +29,17 @@ public class ExpandPendidikan extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.expand_pendidikan);
-
+        ImageButton btnbackp = (ImageButton)findViewById(R.id.btnbackp);
+        btnbackp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent start = new Intent(ExpandPendidikan.this, Menunavutama.class);
+                startActivity(start);
+                finish();
+                overridePendingTransition(R.anim.abc_fade_in,R.anim.abc_fade_out);
+            }
+        });
+        overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
         expandableListView = (ExpandableListView) findViewById(R.id.expandableList);
         pendidikanHashMap = MyDataProvider.getDataHashMap();
         pendidikanHashMapKeys = new ArrayList<String>(pendidikanHashMap.keySet());
